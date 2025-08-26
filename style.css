@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -73,9 +74,9 @@ body {
 .hero {
   position: relative;
   text-align: center;
-  padding: 110px 20px 80px 20px;
-  border-bottom-left-radius: 60px 40px;
-  border-bottom-right-radius: 60px 40px;
+  padding: 90px 10px 60px 10px;
+  border-bottom-left-radius: 40px 30px;
+  border-bottom-right-radius: 40px 30px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   overflow: hidden;
   background: linear-gradient(120deg, #232526 0%, #ff416c 60%, #1fa2ff 100%);
@@ -93,24 +94,23 @@ body {
 }
 .bb-title {
   font-family: 'Luckiest Guy', 'Montserrat', Arial, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
-  background: none;
+  background: rgba(44,62,80,0.92);
   letter-spacing: 3px;
   text-shadow:
     0 2px 16px rgba(31,162,255,0.18),
     0 0 0.5em #ff416c,
     0 0 0.2em #232526;
   margin-bottom: 0;
-  padding: 24px 40px;
-  border-radius: 24px;
-  background: rgba(44,62,80,0.92);
+  padding: 18px 24px;
+  border-radius: 18px;
   box-shadow: 0 8px 32px rgba(31,162,255,0.13);
   display: inline-block;
 }
 .bb-subtitle {
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #fff;
   background: linear-gradient(90deg, #1fa2ff 0%, #ff416c 100%);
   -webkit-background-clip: text;
@@ -124,7 +124,7 @@ body {
   opacity: 0.85;
 }
 .hero-content p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   max-width: 650px;
   margin: 0 auto;
   opacity: 0.95;
@@ -134,23 +134,23 @@ body {
   padding: 10px 0;
 }
 .hero-icons {
-  margin-top: 24px;
+  margin-top: 18px;
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 14px;
 }
 .hero-icons .icon img {
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   filter: drop-shadow(0 2px 6px #ff416c88);
 }
 .cta-btn {
-  margin-top: 32px;
-  padding: 16px 36px;
-  border-radius: 12px;
+  margin-top: 24px;
+  padding: 12px 28px;
+  border-radius: 10px;
   background: linear-gradient(90deg, #1fa2ff 0%, #ff416c 100%);
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
   box-shadow: 0 4px 16px rgba(255,65,108,0.18);
@@ -165,26 +165,26 @@ body {
 
 /* Section Styles */
 .section {
-  padding: 70px 20px;
+  padding: 40px 10px;
   text-align: center;
   background: rgba(44, 62, 80, 0.97);
-  margin-bottom: 30px;
-  border-radius: 18px;
+  margin-bottom: 20px;
+  border-radius: 14px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
 .section:nth-child(even) {
   background: rgba(31,162,255,0.13);
 }
 .section h2 {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   color: #ff416c;
   font-family: 'Luckiest Guy', 'Montserrat', Arial, sans-serif;
   letter-spacing: 2px;
 }
 .section p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   max-width: 700px;
   margin: 0 auto;
   color: #f5f6fa;
@@ -195,18 +195,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 28px;
-  margin-top: 32px;
+  gap: 18px;
+  margin-top: 24px;
 }
 .flip-card {
   background: transparent;
-  width: 270px;
-  height: 180px;
+  width: 220px;
+  height: 140px;
   perspective: 1000px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   cursor: pointer;
   outline: none;
-  border-radius: 14px;
+  border-radius: 12px;
   box-shadow: 0 4px 18px rgba(31,162,255,0.13);
   transition: box-shadow 0.2s;
   display: flex;
@@ -223,7 +223,7 @@ body {
   text-align: center;
   transition: transform 0.6s cubic-bezier(.4,2,.3,1);
   transform-style: preserve-3d;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 .flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
@@ -233,103 +233,60 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 14px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.08rem;
+  font-size: 1rem;
   font-weight: 500;
-  padding: 18px 12px;
+  padding: 12px 8px;
 }
 .flip-card-front {
   background: linear-gradient(120deg, #232526 80%, #1fa2ff 100%);
   color: #ff416c;
-  gap: 10px;
+  gap: 8px;
 }
 .flip-card-back {
   background: linear-gradient(120deg, #1fa2ff 80%, #232526 100%);
   color: #fff;
   transform: rotateY(180deg);
-  gap: 8px;
+  gap: 6px;
 }
 .service-icon {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 6px;
+  width: 26px;
+  height: 26px;
+  margin-bottom: 4px;
 }
 .note-title {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #ff416c;
 }
 .note-desc {
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   color: #fff;
 }
 
-/* Testimonials */
-.testimonials {
-  background: rgba(31,162,255,0.13);
-}
-.testimonial-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 32px;
-  margin-top: 32px;
-}
-.testimonial {
-  background: rgba(44,62,80,0.97);
-  border-radius: 14px;
-  box-shadow: 0 4px 18px rgba(31,162,255,0.13);
-  padding: 28px 24px;
-  max-width: 320px;
-  min-width: 220px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  transition: transform 0.18s, box-shadow 0.18s;
-}
-.testimonial:hover {
-  transform: scale(1.04);
-  box-shadow: 0 8px 32px rgba(255,65,108,0.18);
-}
-.testimonial-img {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #ff416c;
-}
-.client-name {
-  font-size: 0.98rem;
-  color: #ff416c;
-  font-weight: 600;
-}
+/* Remove Testimonials Section */
+.testimonials,
+.testimonial-cards,
+.testimonial,
+.testimonial-img,
+.client-name,
 .brand-icons {
-  margin-top: 24px;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-}
-.brand-icons img {
-  width: 32px;
-  height: 32px;
-  filter: drop-shadow(0 2px 6px #1fa2ff88);
+  display: none !important;
 }
 
 /* Consultation Buttons */
 .consult-btn {
-  padding: 12px 24px;
+  padding: 10px 18px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   display: inline-block;
   margin: 8px 0;
-  font-size: 1.08rem;
+  font-size: 1rem;
   transition: background 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 8px rgba(31,162,255,0.09);
 }
@@ -346,36 +303,36 @@ body {
 /* Privacy Note */
 .privacy-note {
   color: #b3b3b3;
-  font-size: 0.98rem;
-  margin-top: 10px;
+  font-size: 0.95rem;
+  margin-top: 8px;
   font-style: italic;
 }
 
 /* Footer */
 .footer {
   background: rgba(44,62,80,0.97);
-  padding: 28px 0;
+  padding: 18px 0;
   text-align: center;
   color: #fff;
-  margin-top: 40px;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  margin-top: 30px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
   box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
 }
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 .footer-social {
   display: flex;
-  gap: 18px;
-  margin-top: 8px;
+  gap: 12px;
+  margin-top: 6px;
 }
 .footer-social img {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   filter: drop-shadow(0 2px 6px #ff416c88);
   transition: transform 0.2s;
 }
@@ -385,87 +342,87 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-  .service-cards, .testimonial-cards {
-    gap: 18px;
+  .service-cards {
+    gap: 12px;
   }
-  .flip-card, .testimonial {
+  .flip-card {
     max-width: 45vw;
-    min-width: 160px;
-    height: 180px;
-    font-size: 1rem;
+    min-width: 120px;
+    height: 120px;
+    font-size: 0.98rem;
   }
 }
 
 @media (max-width: 900px) {
   .navbar {
     flex-direction: column;
-    padding: 12px 8px;
-    gap: 10px;
+    padding: 10px 4px;
+    gap: 8px;
   }
   .logo {
-    font-size: 1.3rem;
-  }
-  .navbar ul {
-    gap: 12px;
-  }
-  .bb-title {
-    font-size: 2.2rem;
-    padding: 12px 10px;
-  }
-  .section {
-    padding: 40px 8px;
-    border-radius: 10px;
-  }
-  .service-cards, .testimonial-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-  }
-  .flip-card, .testimonial {
-    max-width: 95vw;
-    min-width: 0;
-    height: 160px;
-    font-size: 0.98rem;
-  }
-  .footer {
-    padding: 18px 0;
-    border-radius: 10px;
-  }
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    padding: 8px 4px;
-    gap: 6px;
-  }
-  .logo {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .navbar ul {
     gap: 8px;
   }
   .bb-title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 8px 4px;
   }
   .section {
     padding: 24px 4px;
     border-radius: 8px;
   }
-  .service-cards, .testimonial-cards {
+  .service-cards {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
-  .flip-card, .testimonial {
+  .flip-card {
     max-width: 98vw;
     min-width: 0;
-    height: 120px;
+    height: 90px;
     font-size: 0.95rem;
   }
   .footer {
     padding: 10px 0;
     border-radius: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 6px 2px;
+    gap: 4px;
+  }
+  .logo {
+    font-size: 0.9rem;
+  }
+  .navbar ul {
+    gap: 4px;
+  }
+  .bb-title {
+    font-size: 1rem;
+    padding: 4px 2px;
+  }
+  .section {
+    padding: 12px 2px;
+    border-radius: 6px;
+  }
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .flip-card {
+    max-width: 99vw;
+    min-width: 0;
+    height: 60px;
+    font-size: 0.92rem;
+  }
+  .footer {
+    padding: 6px 0;
+    border-radius: 6px;
   }
 }
