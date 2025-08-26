@@ -1,1 +1,1 @@
-https://papaya-vacherin-3c7212.netlify.app/
+https://mblogics.netlify.app/
